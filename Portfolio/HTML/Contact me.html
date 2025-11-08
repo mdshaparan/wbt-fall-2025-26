@@ -6,9 +6,42 @@
 </head>
 
 <body>
-    <center>
-        <h2>Contact Me</h2>
-    </center>
+
+    <h2>Contact Me</h2>
+
+    <form method="POST">
+        First Name:<input type="text" name="first_name" required><br>
+        Last Name:<input type="text" name="last_name" required><br>
+        Email:<input type="email" name="email" required><br>
+
+        Company Name:<input type="text" name="company_name"><br><br>
+
+        Reason for Contact:<br>
+        <input type="radio" name="reason for contact" required>Project<br>
+        <input type="radio" name="reason for contact" required>Thesis<br>
+        <input type="radio" name="reason for contact" required>Job<br>
+
+
+        Service provided:<br>
+
+        <input type="checkbox" name="service provided" required>Web Development<br>
+        <input type="checkbox" name="service provided">AI Development<br>
+        <input type="checkbox" name="service provided">App Development<br>
+
+
+
+        Book an Appoinment:<br>
+        <input type="date" name="appointment_date" required><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+    </form>
+
+
+
+
 
 </body>
 
