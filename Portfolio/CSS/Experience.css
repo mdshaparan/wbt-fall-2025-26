@@ -1,0 +1,35 @@
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(208, 218, 222);
+    padding: 20px;
+}
+
+nav ul {
+    border-radius: 10px;
+    list-style-type: none;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+
+nav ul a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul a:hover {
+    background-color: black;
+    color: yellow;
+}
