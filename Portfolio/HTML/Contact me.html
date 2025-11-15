@@ -1,59 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/Portfolio/CSS/Contact me.css">
 </head>
 
 <body>
-
-    <ul>
-        <strong>
+    <nav>
+        <ul>
             <li><a href="/Portfolio/index.html">Home</a></li>
+            <li><a href="/Portfolio/HTML/Education.html">Education</a></li>
+            <li><a href="/Portfolio/HTML/Experience.html">Experience</a></li>
+            <li><a href="/Portfolio/HTML/Project.html">Project</a></li>
+        </ul>
+    </nav>
 
-        </strong>
+    <div class="form-container">
+        <h2>Contact Me</h2>
 
-    </ul>
+        <form method="POST">
+            <div class="form-row">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
 
+            <div class="form-row">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
 
-    <h2>Contact Me</h2>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-    <form method="POST">
+            <div class="form-row">
+                <label for="company_name">Company Name:</label>
+                <input type="text" id="company_name" name="company_name">
+            </div>
 
-        First Name:<input type="text" name="first_name" required><br>
-        Last Name:<input type="text" name="last_name" required><br>
-        Email:<input type="email" name="email" required><br>
+            <div class="form-row1">
+                <label>Reason for Contact:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="reason_for_contact" value="Project" required> Project
+                    </label>
+                    <label>
+                        <input type="radio" name="reason_for_contact" value="Thesis" required> Thesis
+                    </label>
+                    <label>
+                        <input type="radio" name="reason_for_contact" value="Job" required> Job
+                    </label>
+                </div>
+            </div>
 
-        Company Name:<input type="text" name="company_name"><br><br>
+            <div class="form-row2">
+                <label>Services Needed:</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="service_provided" value="Web Development"> Web Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service_provided" value="AI Development"> AI Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service_provided" value="App Development"> App Development
+                    </label>
+                </div>
+            </div>
 
-        Reason for Contact:<br>
-        <input type="radio" name="reason for contact" required>Project<br>
-        <input type="radio" name="reason for contact" required>Thesis<br>
-        <input type="radio" name="reason for contact" required>Job<br>
+            <div class="form-row">
+                <label for="appointment_date">Book an Appointment:</label>
+                <input type="date" id="appointment_date" name="appointment_date" required>
+            </div>
 
-
-        Service provided:<br>
-
-        <input type="checkbox" name="service provided" required>Web Development<br>
-        <input type="checkbox" name="service provided">AI Development<br>
-        <input type="checkbox" name="service provided">App Development<br>
-
-
-
-        Book an Appoinment:<br>
-        <input type="date" name="appointment_date" required><br>
-
-
-        <div class="button-group">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </div>
-
-    </form>
-
-
-
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

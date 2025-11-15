@@ -1,35 +1,33 @@
 body {
 
     font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
     background-color: rgb(208, 218, 222);
-    padding: 20px;
+
+
 }
-
-
 
 nav ul {
-    border-radius: 10px;
-    list-style-type: none;
-    background-color: rgb(82, 82, 82);
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0;
-
-}
-
-nav ul a {
-    display: block;
-    color: white;
+    list-style: none;
+    padding: 0;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 18px;
+    background: rgb(44, 62, 80);
+    padding: 15px;
+    border-radius: 5px;
 }
 
-nav ul a:hover {
-    background-color: black;
-    color: yellow;
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+nav a:hover {
+    background: darkcyan;
+    border-radius: 3px;
 }
